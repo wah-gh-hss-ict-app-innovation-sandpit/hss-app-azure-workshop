@@ -18,10 +18,34 @@ namespace demostoragequeue
             WriteSomethingToQueue();
 
             ProcessQueue();
+
+            ReadAllMessagesFromTable();
         }
 
-// Azure.Storage.Queues
-// Azure.Data.Tables
+        private static void ReadAllMessagesFromTable()
+        {
+            try{
+                var tableServiceClient = new TableServiceClient(STORAGECONNSTRING);
+
+                var tableClient = tableServiceClient.GetTableClient(tableName: "demomessageTable");
+
+                Pageable<TableEntity> queryResultsFilter = tableClient.Query<TableEntity>(filter: $"PartitionKey eq 'message-partition'");
+
+                // Iterate the <see cref="Pageable"> to access all queried entities.
+                foreach (TableEntity qEntity in queryResultsFilter)
+                {
+                    Console.WriteLine($"Message is {qEntity.GetString("TheMessage")}: {qEntity.GetString("Timestamp")}");
+                }
+
+                Console.WriteLine($"The query returned {queryResultsFilter.Count()} entities.");
+
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
+
         private static void WriteSomethingToQueue()
         {
             try{
@@ -47,6 +71,9 @@ namespace demostoragequeue
                     Console.WriteLine($"Message: {message.Body}");
 
                     WriteMessageToTable(message);
+
+                    // Remove message from queue after processing
+                    client.DeleteMessage(message.MessageId, message.PopReceipt);
                 }
             }
             catch(Exception ex)
