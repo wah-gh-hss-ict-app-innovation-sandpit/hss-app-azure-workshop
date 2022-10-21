@@ -32,25 +32,25 @@ I will walk you through the creation of Azure SQL Database and use .NET EntityFr
 We will be creating 2 tables today with the schema below:
 
 1. Patient
-|Column Name|Data Type|Length|
+| Column Name | Data Type | Length |
 |-----------|---------|------|
-|UMRN       |varchar  |8     |
-|FirstName  |varchar  |80    |
-|LastName   |varchar  |80    |
-|DateOfBirth|datetime |      |
-|Gender     |string   |2     |
-|CreatedDate|datetime |      |
-|UpdatedDate|datetime |      |
+| UMRN       | varchar  | 8     |
+| FirstName  | varchar  | 80    |
+| LastName   | varchar  | 80    |
+| DateOfBirth | datetime |      |
+| Gender     | string   | 2     |
+| CreatedDate | datetime |      |
+| UpdatedDate | datetime |      |
 
 2. Admission
-|Column Name|Data Type|Length|
+| Column Name | Data Type | Length |
 |-----------|---------|------|
-|VisitNumber|varchar  |12    |
-|AppointmentDate |datetime  |    |
-|AdmissionDate   |datetime  |    |
-|DischargeDate   |datetime |      |
-|HospitalName    |string   |80    |
-|HospitalAddress   |string   |300    |
-|CurrentWard   |string   |300    |
-|CreatedDate|datetime |      |
-|UpdatedDate|datetime |      |
+| VisitNumber |varchar  | 12    |
+| AppointmentDate | datetime  |    |
+| AdmissionDate   | datetime  |    |
+| DischargeDate   | datetime |      |
+| HospitalName    | string   | 80    |
+| HospitalAddress   | string   | 300    |
+| CurrentWard   | string   | 300    |
+| CreatedDate | datetime |      |
+| UpdatedDate| datetime |      |
