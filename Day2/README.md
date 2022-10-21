@@ -31,7 +31,8 @@ Use Case:
 I will walk you through the creation of Azure SQL Database and use .NET EntityFrameworkCore to create the database schema.
 We will be creating 2 tables today with the schema below:
 
-1. Patient
+#### Patient
+
 | Column Name | Data Type | Length |
 |-----------|---------|------|
 | UMRN       | varchar  | 8     |
@@ -42,7 +43,8 @@ We will be creating 2 tables today with the schema below:
 | CreatedDate | datetime |      |
 | UpdatedDate | datetime |      |
 
-2. Admission
+#### Admission
+
 | Column Name | Data Type | Length |
 |-----------|---------|------|
 | VisitNumber |varchar  | 12    |
