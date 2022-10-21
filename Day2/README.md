@@ -61,10 +61,14 @@ We will be creating 2 tables today with the schema below:
 1. Open Visual Studio Professional/Enterprise/Code and create a Class Library project. 
 2. Name the solution **WhereIsPatient** and the class project **WhereIsPatient.DB**
 3. If you are using Visual Studio Code:
-	a. Change directory to where you want your solution to be.
-    b. Create a directory to store your solution: mkdir WhereIsPatient
-    c. Navigate to the new directory: cd WhereIsPatient
-    d. Create a solution for your application: dotnet new sln
-    e. Create a class project: dotnet new classlib -o WhereIsPatient.DB
-    f. Add the new class project to the solution: dotnet sln add WhereIsPatient.DB\WhereIsPatient.DB.csproj
-    g. Open the WhereIsPatient folder in Visual Studio Code
+	- Change directory to where you want your solution to be.
+    - Create a directory to store your solution: **mkdir WhereIsPatient**
+    - Navigate to the new directory: **cd WhereIsPatient**
+    - Create a solution for your application: **dotnet new sln**
+    - Create a class project: **dotnet new classlib -o WhereIsPatient.DB**
+    - Add the new class project to the solution: **dotnet sln add WhereIsPatient.DB\WhereIsPatient.DB.csproj**
+    - Open the **WhereIsPatient** folder in Visual Studio Code
+4. Add the following Nuget Package:
+    - **Microsoft.EntityFrameworkCore**
+    - **Microsoft.EntityframeworkCore.Relational**
+    - **Microsoft.EntityFrameworkCore.SqlServer**
