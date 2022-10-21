@@ -72,3 +72,4 @@ We will be creating 2 tables today with the schema below:
     - **Microsoft.EntityFrameworkCore**
     - **Microsoft.EntityframeworkCore.Relational**
     - **Microsoft.EntityFrameworkCore.SqlServer**
+    - **Microsoft.EntityFrameworkCore.Tools**
