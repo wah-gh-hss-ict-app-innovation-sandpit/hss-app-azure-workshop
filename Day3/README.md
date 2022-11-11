@@ -7,7 +7,7 @@ There are different ways to host applications in Azure
 - Azure Static Web Apps - PaaS hosting solution for static web apps/website. Think NodeJS client apps, HTML sites, Blazor WASM
 - Azure Fuction Apps - Serverless event-driven code hosting
 - Azure Spring Apps - For hosting Java SpringBoot apps/microservices
-- Azure Kubernetes Services - Fully managed Kubernetest platform for orchestrating and managing container-based applications
+- Azure Kubernetes Services - Fully managed Kubernetes platform for orchestrating and managing container-based applications
 - Azure Container Instance - Managed service for you to run an instance of your container-based app
 - Azure Container Apps - Managed service for you to run your container-based app and provide scaling capabilities and integrates with Dapr (a microservice framework)
 - Azure Batch - User for running high-performance and large-scale processing jobs within a pool of VMs
