@@ -63,4 +63,8 @@ namespace WhereIsPatient.ProcessQueueFunction
 }
 ```
 10. Make sure your local.settings.json file has the connection string to your Azure Storage and Database within the "Values" block.
-
+11. To test your solution
+- Go to [https://wip-send-message.azurewebsites.net/sendmessage](https://wip-send-message.azurewebsites.net/sendmessage)
+- Paste your Azure Storage connection string to the field. **NOTE**: make sure there is a queue called "patient-queue-message"
+- Click on any of the 3 buttons to send a message to your queue.
+- Your Azure Function should pick up the message and process it if everything is done right.
