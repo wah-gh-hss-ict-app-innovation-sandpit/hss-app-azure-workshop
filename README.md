@@ -5,3 +5,4 @@ A series of Azure hands-on workshop for the Applications team.
 - Day 2 - Database in Azure - [Link](https://github.com/patcty/hssazureworkshop/tree/main/Day2)
 - Day 3 - Azure App Service - [Link](https://github.com/patcty/hssazureworkshop/tree/main/Day3)
 - Day 4 - Azure Functions - [Link](https://github.com/patcty/hssazureworkshop/tree/main/Day4)
+- Day 5 - Azure Container Apps - [Link](https://github.com/patcty/hssazureworkshop/tree/main/Day5)
