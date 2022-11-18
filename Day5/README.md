@@ -31,7 +31,7 @@ A fully managed container services by Azure that has the following features:
 3. Once you have installed Docker Desktop:
     - Add your HE number to the "docker-users" local group on your machine
     - Login using your Docker credentials that has been assigned to you (firstname.lastname@health.wa.gov.au)
-4. If you want to use Linux-based containers (default in Docker Desktop), you will need to install WSL2 [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
+4. If you want to use Linux-based containers (default in Docker Desktop), you will need to install WSL2. Instructions: [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
 5. If you do not want to use Linux-based containers, you can change Docker Desktop to use Windows containers, however you need to enable HyperV on your machine first.
 6. Once you have done the above, make a copy of the WhereIsPatient solution from last week into another folder.
 7. Open this newly copied solution.
