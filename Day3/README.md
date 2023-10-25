@@ -1,6 +1,6 @@
 # Application Hosting in Azure
 
-## Database offering in Azure
+## Application Hosting offering in Azure
 There are different ways to host applications in Azure
 - Azure Virtual Machine (VM) - The traditional way (IaaS) of building a server to host your application. 
 - Azure App Service - PaaS hosting solution to host Http-based (web-based) applications and APIs. The easiest and quickest way to host web applications on Azure.
