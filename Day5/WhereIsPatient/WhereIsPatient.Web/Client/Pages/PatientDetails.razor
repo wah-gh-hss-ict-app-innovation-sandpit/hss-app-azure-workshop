@@ -1,0 +1,49 @@
+﻿@page "/patientdetails/{umrn}"
+@inject HttpClient Http
+@inject NavigationManager NavManager
+@using WhereIsPatient.Web.Shared.ViewModels
+
+<h2>PatientDetails</h2>
+
+@if(pvm == null)
+{
+    <p>No patient found</p>
+}
+else
+{
+    <p>
+        <ul>
+            <li>Patient First Name: @pvm.FirstName</li>
+            <li>Patient Last Name: @pvm.LastName</li>
+        </ul>
+    </p>
+}
+
+@code {
+    PatientViewModel pvm;
+
+    [Parameter]
+    public string umrn { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+        pvm = await GetPatient();
+    }
+
+    public async Task<PatientViewModel> GetPatient()
+    {
+        using (var response = await Http.GetAsync("api/patient/getpatient/{umrn}"))
+        {
+            if (response.IsSuccessStatusCode)
+            {
+                string apiResponse = await response.Content.ReadAsStringAsync();
+
+                return JsonSerializer.Deserialize<PatientViewModel>(apiResponse);
+            }
+            else
+            {
+                return null;
+            }
+        }
+    }
+}
